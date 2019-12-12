@@ -1,13 +1,10 @@
 <template>
-  <div id="app">
-    <index />
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <script>
-import Vue from 'vue'
-import Index from './components/Index.vue'
+import Vue from 'vue';
+import Index from './components/Index.vue';
 
 export default Vue.extend({
   name: 'app',
@@ -18,12 +15,10 @@ export default Vue.extend({
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Hind:300,400|Noto+Sans+JP:300,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
