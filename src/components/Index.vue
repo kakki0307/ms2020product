@@ -1,14 +1,5 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <h1>商品詳細画面</h1>
-    <div id="products">
-      <h2>{{ state.productName }}</h2>
-      <img :src="imageUrl" />
-      <p>{{ state.productPrice }}円</p>
-      <p>{{ state.productDescription }}</p>
-      <p>{{ state.productBrand }}</p>
-=======
     <div class="product">
       <div>
         <img :src="state.productImageUrl" width="100%" />
@@ -21,7 +12,6 @@
       <div class="buy-button">
         <i class="material-icons"> redeem </i>購入する
       </div>
->>>>>>> f0d5144af32f5faf8119fb991641d38c84ca6414
     </div>
   </div>
 </template>
@@ -30,12 +20,7 @@ const commaNumber = require('comma-number')
 const ProductInfo = [
   {
     productName: '四季彩の丘',
-<<<<<<< HEAD
     productImageUrl: 'product_image/product000.png',
-=======
-    productImageUrl:
-      'data:image/gif;base64,R0lGODdhEAAJAIABAP8AAP///ywAAAAAEAAJAAACCoSPqcvtD6OclBUAOw==',
->>>>>>> f0d5144af32f5faf8119fb991641d38c84ca6414
     productDescription:
       '夏のグリーンシーズンは、色鮮やかな花畑や雄大な景色を。 冬のウィンターシーズンは、雪化粧した丘で迫力満点のアクティビティをお楽しみください。',
     productPrice: 25000,
@@ -43,12 +28,7 @@ const ProductInfo = [
   },
   {
     productName: '天に続く道',
-<<<<<<< HEAD
     productImageUrl: 'product_image/product001.png',
-=======
-    productImageUrl:
-      'data:image/gif;base64,R0lGODdhEAAJAIABAP8AAP///ywAAAAAEAAJAAACCoSPqcvtD6OclBUAOw==',
->>>>>>> f0d5144af32f5faf8119fb991641d38c84ca6414
     productDescription:
       '天に続く道は、北海道斜里町にある全長約28.1キロメートルの直線道路です。真っ直ぐな道がはるか遠くまで続き、あたかも天まで続いているように見えることから名付けられました。おすすめの時期は、春分の日と秋分の日辺りの年に2回で、道の延長上に夕日が沈んでいく様子を見ることができます。また、付近には名もなき展望台があり、オホーツク海や田畑を見渡すことができます。',
     productPrice: 19000,
@@ -58,14 +38,10 @@ const ProductInfo = [
 
 export default {
   data () {
-<<<<<<< HEAD
     let id = this.$route.query.id
     if (!id) {
       id = 0
     }
-=======
-    const id = this.$route.params.id
->>>>>>> f0d5144af32f5faf8119fb991641d38c84ca6414
     const state = ProductInfo[id]
     const image = state.productImageUrl
     return {
@@ -127,16 +103,9 @@ export default {
   text-align: center;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-img {
-  width: 200px;
-  height: 200px;
-  border: 1px black solid;
-=======
 .buy-button i {
   font-size: 1.5rem;
   vertical-align: middle;
   padding-right: 0.3rem;
->>>>>>> f0d5144af32f5faf8119fb991641d38c84ca6414
 }
 </style>
